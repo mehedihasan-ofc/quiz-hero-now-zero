@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Hero - Blog</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-common">
+
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <button class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Home
+            </button>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+    <section class="w-9/12 mx-auto my-10">
+        <div class="my-10">
+            <h2 class="text-2xl font-medium mb-3">01. What is the difference between map(), filter(), find() and
+                forEach()?</h2>
+            <p class="leading-8"><span class="bg-green-600 text-white px-2 rounded">Answer:</span> map(): executes the
+                same code on every element in an array and returns a new array with the updated elements. filter():
+                checks every element in an array to see if it meets certain criteria and returns a new array. If no
+                value matches the condition, an empty array is returned. find(): method returns the first element in the
+                given array that matches the condition. If no value matches the condition, undefined is returned.
+                forEach(): is used to execute the same code on every element in an array and it returns undefined.</p>
+        </div>
+        <div class="my-10">
+            <h2 class="text-2xl font-medium mb-3">02. What is the difference between localStorage, sessionStorage and
+                cookies?</h2>
+            <p class="leading-8"><span class="bg-green-600 text-white px-2 rounded">Answer:</span> localStorage,
+                sessionStorage, and cookies are all used to store data on the client side, but they have some important
+                differences.
+
+                localStorage: This is a type of storage that allows you to store data in the browser permanently. This
+                means that the data you store will persist even if the user closes their browser and comes back at a
+                later time.
+
+                sessionStorage: This is similar to localStorage, but the data stored in sessionStorage is only available
+                for the duration of the browser session. This means that the data is lost when the browser is closed or
+                the tab is closed.
+
+                cookies: Cookies are the oldest and most well-known mechanism. They are simple to use and well-supported
+                by browsers. However, they are limited to 4KB of data and are often used to store data that is not
+                sensitive, such as user preferences.</p>
+        </div>
+        <div class="my-10">
+            <h2 class="text-2xl font-medium mb-3">03. What is an event loop? How does it work?</h2>
+            <p class="leading-8"><span class="bg-green-600 text-white px-2 rounded">Answer:</span> The event loop is a
+                fundamental concept in JavaScript that plays a crucial role in managing the execution of asynchronous
+                code. In JavaScript, code is executed in a single-threaded environment, which means that only one thing can
+                happen at a time. Asynchronous code, such as network requests or timers, needs to be executed without
+                blocking the main thread. The event loop is responsible for managing the execution of these asynchronous
+                tasks. The event loop works by continuously checking the message queue for any pending tasks. When an
+                asynchronous task, such as a network request, is completed, it is added to the message queue as an
+                event. The event loop then checks the message queue for any pending events and executes them one at a
+                time in the order they were added.</p>
+        </div>
+        <div class="my-10">
+            <h2 class="text-2xl font-medium mb-3">04. What is the function of quizTimer()?</h2>
+            <p class="leading-8"><span class="bg-green-600 text-white px-2 rounded">Answer:</span> Each time 60 seconds are given to answer 6 quizzes. The task of the quizTimer() function is to indicate the red color after counting up to 60 seconds.</p>
+        </div>
+        <div class="my-10">
+            <h2 class="text-2xl font-medium mb-3">05. What is the function of chooseQuiz()?</h2>
+            <p class="leading-8"><span class="bg-green-600 text-white px-2 rounded">Answer:</span> 4 options are given for each quiz. The task of the chooseQuiz() is to check the selected option and send the correct answer to displayAnswers().</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
